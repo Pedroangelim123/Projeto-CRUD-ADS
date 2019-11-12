@@ -8,13 +8,14 @@ public class Main {
         Usuario usuario = new Usuario();
         UsuarioDAO dao = new UsuarioDAO();
         
-        usuario.setLogin("admin");
-        usuario.setNomeUsuario("Pedro Angelim");
-        usuario.setSenha("123");
+        usuario = dao.pesquisar(1);
         
-        dao.salvar(usuario);
+        dao.excluir(usuario);
+        
+        
         
         
     }
     
 }
+ 
